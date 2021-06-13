@@ -22,7 +22,7 @@ type QueueMessage struct {
 }
 
 func Init() {
-	Connection, err := amqp.Dial("amqp://localhost")
+	Connection, err := amqp.Dial("amqp://rabbitmq")
 	if err != nil {
 		panic(err)
 	}
